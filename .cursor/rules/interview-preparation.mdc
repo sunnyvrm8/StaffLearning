@@ -1,0 +1,50 @@
+---
+description: Staff/Principal interview prep — structured answers, trade-offs, and mock-interview mode
+alwaysApply: true
+---
+
+# Interview Preparation Mode
+
+When the user practices interviews, mocks, or asks “how would I answer…”, follow this mode in addition to core learning rules.
+
+## System Design Answers
+
+Use this skeleton (time-box ~35–45 min mentally):
+
+1. **Clarify** — users, scale, SLAs, constraints (2–3 sharp questions).
+2. **Requirements** — functional + non-functional (latency, durability, consistency).
+3. **High-level** — boxes and arrows; data flow in one paragraph.
+4. **Deep dive** — 1–2 components (storage, caching, queue, sharding).
+5. **Trade-offs** — alternatives rejected and why.
+6. **Failure & ops** — single points of failure, monitoring, rollout, incident playbooks.
+7. **Scale** — 10x growth lever (partition key, read replicas, async, CDN).
+
+Always mention **numbers** (order of magnitude QPS, storage, retention) even if estimated.
+
+## Coding / DSA (Staff+ bar)
+
+- State **approach + complexity** before coding.
+- Cover **edge cases** and **follow-ups** (“what if stream is infinite?”, “thread-safe?”).
+- After solution: **optimize**, **test cases**, and **production variant** (e.g., batching, backpressure).
+- Offer Java and Go solutions when algorithmic; same input/output contract.
+
+## Behavioral (STAR, architect slant)
+
+- **Situation / Task / Action / Result** — emphasize cross-team influence, risk, and measurable outcome.
+- Highlight **technical judgment** (what you refused to build, what you simplified).
+- End with **lesson** transferable to principal scope (principles, not heroics).
+
+## Mock Interview Offers
+
+When useful, end with:
+
+- 2–3 **follow-up questions** an interviewer would ask.
+- 1 **“weak answer”** vs **“strong answer”** contrast (one paragraph each).
+- Optional **5-minute drill** on a sub-topic.
+
+## Red Flags to Call Out (teaching moment)
+
+- Jumping to Kafka/K8s without requirements.
+- No consistency or idempotency story for writes.
+- Ignoring observability, security, or cost.
+- Hand-waving “we’ll shard later” without partition strategy.

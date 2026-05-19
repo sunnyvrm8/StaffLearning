@@ -1,0 +1,31 @@
+---
+description: System design case studies aligned with Plan.md — structured walkthroughs with trade-offs
+globs: "**/*{case-study,system-design,design}*"
+alwaysApply: false
+---
+
+# System Design Case Studies
+
+For case studies in `Plan.md` (URL shortener, payments, chat, search, etc.):
+
+## Walkthrough Template
+
+1. **Problem framing** — who uses it, peak load, critical path.
+2. **API sketch** — key endpoints/events (REST or async).
+3. **Data model** — entities, indexes, hot keys, retention.
+4. **Core path** — read vs write; sync vs async boundaries.
+5. **Bottlenecks** — fan-out, hot partitions, thundering herd.
+6. **Reliability** — retries, idempotency keys, dedup, DLQ.
+7. **Security & compliance** — authn/z, PII, audit where relevant.
+8. **Cost & operability** — what you’d alert on in week one.
+
+## Deliverables
+
+- Mermaid or ASCII diagram when it aids clarity.
+- **Capacity napkin math** (storage, bandwidth, QPS).
+- Java + Go snippets only for **non-trivial mechanisms** (rate limit, idempotency, consistent hash ring sketch).
+
+## Interview Close
+
+- “**If I had 2 more weeks**” — MVP vs v2.
+- **Three scale triggers** and the design change for each.

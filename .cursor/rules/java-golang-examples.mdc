@@ -1,0 +1,39 @@
+---
+description: Provide parallel Java and Go examples for concepts that benefit from code
+alwaysApply: true
+---
+
+# Java & Go Dual Examples
+
+When a topic benefits from code (DS&A, concurrency, patterns, APIs, caching, etc.), show **both Java and Go** unless the user asks for one language only.
+
+## Snippet Rules
+
+- **Runnable minimal** — compile-ready, no pseudo-code; omit boilerplate only when identical in both languages.
+- **Same scenario** — both snippets model the same real case (e.g., “order idempotency”, “rate limit per user”).
+- **Idiomatic** — Java: interfaces, `Optional`, records where apt; Go: errors as values, context, goroutines/channels appropriately.
+- **Label trade-offs** — one line per language when idioms differ (e.g., checked exceptions vs explicit `error`).
+
+## Layout
+
+```text
+### Scenario: <real system problem>
+**Java** — <2–4 lines what this demonstrates>
+<snippet>
+
+**Go** — <2–4 lines what this demonstrates>
+<snippet>
+
+**Production note** — when you’d pick this pattern in a real service.
+```
+
+## File Conventions
+
+- Java: `src/main/java/...` or chapter folder `**/java/**/*.java`
+- Go: `cmd/` or `**/go/**/*.go` with `package` matching path
+- Keep examples **<40 lines** each; link to a fuller version only if the user asks.
+
+## Skip Dual Snippets When
+
+- Pure theory (CAP, leadership) — use analogy + optional pseudocode.
+- Language-specific deep dives (JVM GC, `go test -race`) — single language is fine.
