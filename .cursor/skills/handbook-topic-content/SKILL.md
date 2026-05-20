@@ -127,18 +127,15 @@ Skip dual snippets for: CAP-only theory, leadership, interview strategy, pure na
 
 ### Step 6 — Interview question bank
 
-Generate `interview-questions.md` using [topic-templates.md](topic-templates.md#interview-questions-template).
+Generate `interview-questions.md` using [topic-templates.md](topic-templates.md#interview-questions-template). Follow `interview-preparation.mdc` (**Handbook interview question banks**).
 
 Requirements:
 
 - Exact count: 10, 25, 50, or 100 per rubric/user.
-- Tag each question: `[EASY]` `[MEDIUM]` `[HARD]` `[STAFF+]` `[PRINCIPAL]`.
-- Tag dimension: `[CONCEPT]` `[CODING]` `[SYSTEM]` `[BEHAVIORAL]` `[DEBUG]` `[TRADEOFF]`.
-- Group by **subsections** (see rubric for category mix).
-- For top 15% hardest questions, add **2-line strong answer hint** (not full essay).
-- For system-design case studies, include at least 20% `[SYSTEM]` with capacity/ failure follow-ups.
-
-Do **not** paste full answers in the bank unless the user asks for an "answer key" appendix—keep hints brief to preserve drill value.
+- Each item: numbered question + full **Answer:** (production-anchored; trade-offs and order-of-magnitude where relevant).
+- **No** difficulty or type tags (`[EASY]`, `[CONCEPT]`, etc.) and **no** Legend for tags.
+- Group by **subsections** (see rubric for mix and section headings).
+- For system-design case studies, include enough design-depth Q&A with capacity and failure follow-ups in the answers (no `[SYSTEM]` labels).
 
 ### Step 7 — Quality gate
 
@@ -167,7 +164,7 @@ Before finishing, verify:
 
 > Case Study 7 Rate Limiter — content + 25 interview questions.
 
-→ `case-studies/07-rate-limiter/`, system-design walkthrough template, dual snippets, 25 questions weighted `[SYSTEM]`.
+→ `case-studies/07-rate-limiter/`, system-design walkthrough template, dual snippets, 25 Q&A pairs (~40% system-design depth per rubric).
 
 **Questions only**
 
@@ -182,7 +179,7 @@ Before finishing, verify:
 | "Outline only" | README headings + diagram list + question categories (no full prose) |
 | "Diagrams only" | `diagrams/` files + links |
 | "Cheatsheet" | Condensed README ≤800 words + 10 questions |
-| "Interview expansion 25→50" | Add 25 new questions; dedupe; re-balance tags |
+| "Interview expansion 25→50" | Add 25 new Q&A pairs; dedupe; re-balance section mix per rubric |
 
 ## Anti-Patterns (reject or rewrite)
 
@@ -201,4 +198,4 @@ Before finishing, verify:
 
 ## After Delivery
 
-Offer (once, briefly): mock drill on 3 hard questions, answer key for a subsection, or canvas-style architecture view for case studies—only if useful for the topic type.
+Offer (once, briefly): mock drill on 3 questions from the bank, or a canvas-style architecture view for case studies—only if useful for the topic type.

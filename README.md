@@ -18,6 +18,8 @@ Topics are written for **architect-level depth**: stakeholder pain first, trade-
 | Path | Status |
 |------|--------|
 | [`chapters/01-solid-and-core-engineering-principles/`](chapters/01-solid-and-core-engineering-principles/README.md) | Full chapter + Top 20 Q&A |
+| [`chapters/02-design-patterns/`](chapters/02-design-patterns/README.md) | Full chapter + 25 interview questions |
+| [`chapters/03-domain-driven-design-and-bounded-contexts/`](chapters/03-domain-driven-design-and-bounded-contexts/README.md) | Full chapter + Top 10 Q&A |
 | [`leadership/`](leadership/README.md) | Leadership bundle + Top 20 Q&A with answers |
 | [`interview-prep/principal-engineer-thinking/`](interview-prep/principal-engineer-thinking/README.md) | Principal thinking lens + Top 10 Q&A with answers |
 

@@ -2,6 +2,8 @@
 
 Choose **one** bank size per topic. State the rationale in the agent response.
 
+**Output format:** Every item is question + **Answer:**. Do **not** label questions with difficulty or type tags in the file—use the mix tables below only when **planning** variety.
+
 ## Size Decision Matrix
 
 | Size | When to use | Plan.md examples |
@@ -19,100 +21,90 @@ Choose **one** bank size per topic. State the rationale in the agent response.
 
 ## Category Mix (by size)
 
-Percentages are **minimum floors**; adjust ±10% for topic fit.
+Percentages are **minimum floors** for planning; adjust ±10% for topic fit. Cover the mix through question wording and answer depth—never with visible tags.
 
 ### 10 questions
 
-| Dimension | Min count |
-|-----------|-----------|
-| `[CONCEPT]` | 3 |
-| `[TRADEOFF]` | 2 |
-| `[CODING]` or `[SYSTEM]` | 3 (pick dominant for topic) |
-| `[DEBUG]` or `[BEHAVIORAL]` | 2 |
+| Kind | Min count |
+|------|-----------|
+| Conceptual / definitions | 3 |
+| Trade-offs / alternatives | 2 |
+| Coding or system design | 3 (pick dominant for topic) |
+| Debugging or behavioral | 2 |
 
-Difficulty: 3 EASY, 4 MEDIUM, 2 HARD, 1 STAFF+.
+Depth spread: include easier definitional items, applied scenarios, and at least one staff-level design or incident question.
 
 ### 25 questions
 
-| Dimension | Min count |
-|-----------|-----------|
-| `[CONCEPT]` | 6 |
-| `[TRADEOFF]` | 5 |
-| `[CODING]` | 5 (if algorithmic/language chapter) |
-| `[SYSTEM]` | 5 (if infra/distributed/case study) |
-| `[DEBUG]` | 2 |
-| `[BEHAVIORAL]` | 2 (leadership chapters: 8+) |
-
-Difficulty: 6 EASY, 10 MEDIUM, 6 HARD, 3 STAFF+.
+| Kind | Min count |
+|------|-----------|
+| Conceptual | 6 |
+| Trade-offs | 5 |
+| Coding | 5 (if algorithmic/language chapter) |
+| System design | 5 (if infra/distributed/case study) |
+| Debugging | 2 |
+| Behavioral | 2 (leadership chapters: 8+) |
 
 ### 50 questions
 
-| Dimension | Min count |
-|-----------|-----------|
-| `[CONCEPT]` | 12 |
-| `[TRADEOFF]` | 10 |
-| `[CODING]` | 10 |
-| `[SYSTEM]` | 10 |
-| `[DEBUG]` | 4 |
-| `[BEHAVIORAL]` | 4 |
+| Kind | Min count |
+|------|-----------|
+| Conceptual | 12 |
+| Trade-offs | 10 |
+| Coding | 10 |
+| System design | 10 |
+| Debugging | 4 |
+| Behavioral | 4 |
 
-Difficulty: 10 EASY, 20 MEDIUM, 12 HARD, 8 STAFF+ (include 2 PRINCIPAL for chapters 15, 24, 28–30).
+Include principal-scope items (cross-team, build-vs-buy, multi-year) where the topic warrants it—without labeling them.
 
 ### 100 questions
 
-| Dimension | Min count |
-|-----------|-----------|
-| `[CONCEPT]` | 22 |
-| `[TRADEOFF]` | 20 |
-| `[CODING]` | 20 |
-| `[SYSTEM]` | 22 |
-| `[DEBUG]` | 8 |
-| `[BEHAVIORAL]` | 8 |
+| Kind | Min count |
+|------|-----------|
+| Conceptual | 22 |
+| Trade-offs | 20 |
+| Coding | 20 |
+| System design | 22 |
+| Debugging | 8 |
+| Behavioral | 8 |
 
-Difficulty: 18 EASY, 38 MEDIUM, 28 HARD, 16 STAFF+ (include 6 PRINCIPAL).
+Include several principal-scope and rapid-fire items in dedicated sections.
 
 ## Topic-Specific Weighting
 
 Apply **after** picking bank size; rebalance within ±10%.
 
-| Topic family | Boost dimensions | De-emphasize |
-|--------------|------------------|--------------|
-| DS&A (ch. 1) | `[CODING]`, `[TRADEOFF]` | `[BEHAVIORAL]` |
-| Java/Go (ch. 2) | `[CONCEPT]`, `[DEBUG]` | `[SYSTEM]` |
-| SOLID/Patterns (3–4) | `[TRADEOFF]`, `[CODING]` | `[SYSTEM]` |
-| Concurrency (5) | `[CODING]`, `[DEBUG]` | `[BEHAVIORAL]` |
-| DB/Index/Cache (8–10) | `[SYSTEM]`, `[TRADEOFF]` | — |
-| Microservices/API/Events (11–14) | `[SYSTEM]`, `[TRADEOFF]` | — |
-| Distributed/CAP/Consistency (15–17) | `[SYSTEM]`, `[TRADEOFF]`, `[CONCEPT]` | `[CODING]` unless algorithms cited |
-| K8s/Docker/AWS (19–21) | `[SYSTEM]`, `[DEBUG]` | `[CODING]` |
-| Observability/Security (22–23) | `[DEBUG]`, `[SYSTEM]` | — |
-| Case studies (24 + studies) | `[SYSTEM]` 40%+, `[TRADEOFF]` | `[BEHAVIORAL]` unless auth/payments |
-| AI/RAG (25–26) | `[SYSTEM]`, `[TRADEOFF]` | — |
-| Performance/Scale (27–28) | `[SYSTEM]`, `[DEBUG]` | — |
-| Leadership (29) | `[BEHAVIORAL]`, `[TRADEOFF]` | `[CODING]` |
-| Mock interviews (30) | `[BEHAVIORAL]`, `[SYSTEM]` meta | `[CODING]` |
+| Topic family | Emphasize in the bank | De-emphasize |
+|--------------|----------------------|--------------|
+| DS&A (ch. 1) | coding, complexity trade-offs | behavioral |
+| Java/Go (ch. 2) | concepts, debugging | system design |
+| SOLID/Patterns (3–4) | trade-offs, coding | system design |
+| Concurrency (5) | coding, debugging | behavioral |
+| DB/Index/Cache (8–10) | system design, trade-offs | — |
+| Microservices/API/Events (11–14) | system design, trade-offs | — |
+| Distributed/CAP/Consistency (15–17) | system design, trade-offs, concepts | coding unless algorithms cited |
+| K8s/Docker/AWS (19–21) | system design, debugging | coding |
+| Observability/Security (22–23) | debugging, system design | — |
+| Case studies (24 + studies) | system design 40%+, trade-offs | behavioral unless auth/payments |
+| AI/RAG (25–26) | system design, trade-offs | — |
+| Performance/Scale (27–28) | system design, debugging | — |
+| Leadership (29) | behavioral, trade-offs | coding |
+| Mock interviews (30) | behavioral, system-design meta | coding |
 
 ## Question Quality Rules
 
 1. **Specific** — "How does cache-aside handle stampede on hot keys?" not "What is caching?"
-2. **Layered** — same theme at EASY (define), MEDIUM (apply), HARD (design under failure).
+2. **Layered** — same theme from definition → apply → design under failure, without difficulty labels.
 3. **No duplicates** — if two questions differ only by wording, merge.
-4. **Staff+ bar** — requires trade-off, numbers, or incident reasoning.
-5. **Principal** — cross-team, multi-year, build-vs-buy, org-scale.
+4. **Staff+ bar** — answers name trade-offs, order-of-magnitude, or incident reasoning where relevant.
+5. **Principal** — answers may cover cross-team, multi-year, build-vs-buy, org-scale when the question asks for it.
 
-## Strong-Answer Hints (top 15% per bank)
+## Answer quality
 
-Format under the question:
-
-```markdown
-<details>
-<summary>Hint</summary>
-
-Strong answer names X vs Y, gives order-of-magnitude, and states failure mode Z.
-</details>
-```
-
-Keep hints ≤3 sentences.
+- **Answer** body is complete enough to study or mock from—not a one-line hint.
+- Prefer 1 short paragraph; 2–3 for system design or behavioral items.
+- Name X vs Y, give order-of-magnitude when relevant, state a failure mode or metric when the question is design- or ops-oriented.
 
 ## File Section Headings (by size)
 
@@ -122,4 +114,4 @@ Keep hints ≤3 sentences.
 
 **50**: Add `## Coding`, `## System Design`, `## Debugging & Ops`, `## Staff+`
 
-**100**: Add `## Principal`, `## Rapid Fire` (20 one-liners), `## Scenario Drills` (5 multi-part)
+**100**: Add `## Principal`, `## Rapid Fire` (20 Q&A pairs), `## Scenario Drills` (5 multi-part, each part with **Answer:**)

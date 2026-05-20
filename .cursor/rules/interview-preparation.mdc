@@ -48,3 +48,20 @@ When useful, end with:
 - No consistency or idempotency story for writes.
 - Ignoring observability, security, or cost.
 - Hand-waving “we’ll shard later” without partition strategy.
+
+## Handbook `interview-questions.md` banks
+
+When creating or editing `**/interview-questions.md` (chapters, case studies, leadership, interview-prep):
+
+1. **Question + answer together** — each item is a numbered question followed by a full **Answer:** (staff/principal depth: trade-offs, numbers, failure modes where relevant). No separate answer-key file, no collapsed hints-only blocks.
+2. **No difficulty or type labels** — do not prefix or tag questions with `[EASY]`, `[MEDIUM]`, `[HARD]`, `[STAFF+]`, `[PRINCIPAL]`, `[CONCEPT]`, `[CODING]`, `[SYSTEM]`, `[BEHAVIORAL]`, `[DEBUG]`, `[TRADEOFF]`, or a Legend explaining them.
+3. **Bank metadata only** — optional header: title, bank size (10/25/50/100), one-line rationale, last updated. Group by section headings (e.g. Foundations, Design & Trade-offs) when the bank is large.
+4. **Format** — use `## N. <question>` then `**Answer:** <prose>` (match existing chapter banks such as SOLID).
+
+```markdown
+## 3. When is Strategy preferable to a growing channel switch?
+
+**Answer:** Prefer Strategy when channel rules diverge in behavior or test surface, not just constants. A second channel in six months may still be a switch; a third with different retry/idempotency contracts usually warrants injectable `ChannelSender` implementations and a registry. Trade-off: more types and wiring vs. one file that becomes the team’s merge-conflict hotspot.
+```
+
+Vary depth and topic mix across the bank (concept, coding, system design, behavioral) without labeling items—use the interview-bank rubric for **counts and section balance** only.

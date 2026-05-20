@@ -73,37 +73,29 @@ See [interview-questions.md](./interview-questions.md) (<N> questions, <size rat
 **Rationale:** <one line from rubric>  
 **Last updated:** <YYYY-MM-DD>
 
-### Legend
-
-- Difficulty: `[EASY]` `[MEDIUM]` `[HARD]` `[STAFF+]` `[PRINCIPAL]`
-- Type: `[CONCEPT]` `[CODING]` `[SYSTEM]` `[BEHAVIORAL]` `[DEBUG]` `[TRADEOFF]`
-
 ---
 
 ## <Section per rubric — e.g. Foundations>
 
-1. `[EASY]` `[CONCEPT]` …
-2. …
+## 1. <Question text — specific, production-anchored>
 
-<details>
-<summary>Hint</summary>
+**Answer:** <Full answer: mechanism, trade-off, failure mode, or numbers as appropriate.>
 
-Strong answer: …
-</details>
+## 2. …
 
 ---
 
 ## <Next section>
 
-…
+## N. …
+
+**Answer:** …
 
 ---
 
 ## Rapid Fire (100-bank only)
 
-| # | Question |
-|---|----------|
-| 1 | … |
+Each rapid-fire item still includes **Answer:** (can be shorter, 2–4 sentences).
 ```
 
 ---
@@ -191,6 +183,6 @@ Replace "Core ideas" with:
 
 ---
 
-## Answer Key Appendix (only when requested)
+## Legacy banks
 
-Separate file: `interview-answers.md` — full answers for questions marked in a provided list; do not merge into question bank by default.
+When extending an older bank that used difficulty/type tags or hints-only, rewrite touched items to Q&A format and remove tag prefixes when editing that file.

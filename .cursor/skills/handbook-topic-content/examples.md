@@ -11,7 +11,7 @@
 3. README: cache-aside vs read-through vs write-through; stampede; TTL invalidation; pain = DB load + latency on catalog service.
 4. Diagrams: `read-path.md`, `invalidation.md`, `stampede.md`.
 5. Code: cache-aside (Java + Go), singleflight or lock for stampede (Java + Go).
-6. `interview-questions.md` with 50 tagged questions.
+6. `interview-questions.md` with 50 question-and-answer pairs (no difficulty/type tags).
 7. Cross-link ch. 9, 15, 16.
 
 ---
@@ -26,7 +26,7 @@
 2. README uses case-study addendum (API, napkin math, scale triggers).
 3. Diagrams: context, token-bucket sequence, distributed topology.
 4. Java + Go: token bucket or sliding window (same scenario).
-5. 25 questions: ~40% `[SYSTEM]`, ~30% `[TRADEOFF]`.
+5. 25 Q&A pairs: ~40% system-design depth, ~30% trade-off focused (per rubric, no tags in file).
 
 ---
 
@@ -51,7 +51,7 @@
 1. `leadership/influence-without-authority/`.
 2. README: STAR-friendly scenarios, no code.
 3. Optional decision-flow diagram.
-4. **10 questions**, heavy `[BEHAVIORAL]` + `[TRADEOFF]`.
+4. **10 Q&A pairs**, mostly behavioral and trade-off themed.
 
 ---
 
