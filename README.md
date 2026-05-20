@@ -24,6 +24,9 @@ Topics are written for **architect-level depth**: stakeholder pain first, trade-
 | [`chapters/05-java-and-golang-deep-dive/`](chapters/05-java-and-golang-deep-dive/README.md) | Full chapter + 50 Java + 50 Go Q&A |
 | [`chapters/06-concurrency-and-multithreading/`](chapters/06-concurrency-and-multithreading/README.md) | Top 10 Q&A (full chapter pending) |
 | [`chapters/07-memory-management/`](chapters/07-memory-management/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/08-networking-and-http/`](chapters/08-networking-and-http/README.md) | Full chapter + Top 10 Q&A |
+| [`chapters/09-api-design/`](chapters/09-api-design/README.md) | Full chapter + 50 interview questions |
+| [`chapters/10-database-design-and-data-modeling/`](chapters/10-database-design-and-data-modeling/README.md) | Full chapter + 50 interview questions |
 | [`leadership/`](leadership/README.md) | Leadership bundle + Top 20 Q&A with answers |
 | [`interview-prep/principal-engineer-thinking/`](interview-prep/principal-engineer-thinking/README.md) | Principal thinking lens + Top 10 Q&A with answers |
 
