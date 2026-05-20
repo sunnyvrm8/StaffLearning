@@ -60,8 +60,10 @@ def write_chapter_pages(chapter_dir: Path, titles: dict[int, str]) -> None:
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
+    docs_root = root / "docs"
+    source_root = docs_root if docs_root.is_dir() else root
     plan_path = root / "Plan.md"
-    chapters_root = root / "chapters"
+    chapters_root = source_root / "chapters"
     if not plan_path.is_file():
         print("Plan.md not found", file=sys.stderr)
         return 1
@@ -82,7 +84,7 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    leadership = root / "leadership" / "diagrams"
+    leadership = source_root / "leadership" / "diagrams"
     if leadership.is_dir():
         leadership.joinpath(".pages").write_text("sort_type: natural\n", encoding="utf-8")
 

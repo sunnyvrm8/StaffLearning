@@ -16,7 +16,7 @@ repo_name: sunnyvrm8/StaffLearning
 repo_url: https://github.com/sunnyvrm8/StaffLearning
 edit_uri: edit/main/
 
-docs_dir: .
+docs_dir: docs
 
 theme:
   name: material
