@@ -1,0 +1,5 @@
+# Pin versions for reproducible handbook site builds (GitHub Pages).
+mkdocs-material==9.6.14
+mkdocs-awesome-pages-plugin==2.10.1
+mkdocs-exclude==1.0.2
+pymdown-extensions==10.15

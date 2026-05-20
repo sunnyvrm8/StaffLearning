@@ -1,0 +1,98 @@
+# Staff Learning — static handbook (MkDocs Material).
+# Local preview: pip install -r requirements-docs.txt && python scripts/sync_mkdocs_nav.py && mkdocs serve
+# GitHub Pages: enable "Deploy from branch" → gh-pages (workflow pushes there), or use Actions environment URL.
+
+site_name: Staff Learning
+site_description: >-
+  Staff / principal engineer handbook — production trade-offs, Java + Go examples,
+  diagrams, and interview question banks.
+site_author: Staff Learning
+
+# CI sets SITE_URL for project pages; local default keeps links working on mkdocs serve.
+site_url: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
+
+# Replace with your fork so "View source" / edit links resolve.
+repo_name: StaffLearning
+repo_url: https://github.com/example/StaffLearning
+edit_uri: edit/main/
+
+docs_dir: .
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Sora
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+  - exclude:
+      glob:
+        - ".cursor/**"
+        - "**/__pycache__/**"
+        - ".venv/**"
+        - "terminals/**"
+  - awesome-pages
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      base_path:
+        - .
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css

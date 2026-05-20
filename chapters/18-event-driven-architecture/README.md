@@ -102,7 +102,7 @@ See [diagrams/cqrs-projection.md](./diagrams/cqrs-projection.md).
 | **Complexity** | Moderate | High—snapshots, versioning, GDPR deletes |
 | **When** | Most ecommerce, notifications | Trading, collaborative editors, regulated audit |
 
-**Production note:** Event sourcing is **not** required for EDA. Many systems are **event-driven** (notify after commit) without sourcing every aggregate. Adopt when **temporal queries**, **mandatory audit**, or **replay-driven products** justify storage and team skill ([Case Study 11: E-Commerce](../case-studies/11-e-commerce-inventory-and-orders/README.md) when present).
+**Production note:** Event sourcing is **not** required for EDA. Many systems are **event-driven** (notify after commit) without sourcing every aggregate. Adopt when **temporal queries**, **mandatory audit**, or **replay-driven products** justify storage and team skill. Practice the overlap with reservations and CQRS in **Case Study 11 (E-Commerce Inventory and Orders)** in [`Plan.md`](../../Plan.md) when you reach Tier 2 case studies.
 
 ### Choreography vs orchestration
 

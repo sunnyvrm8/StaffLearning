@@ -1,0 +1,11 @@
+nav:
+  - Home: index.md
+  - Curriculum: Plan.md
+  - chapters
+  - Leadership:
+      - leadership/README.md
+      - leadership/interview-questions.md
+      - leadership/diagrams
+  - Interview prep:
+      - interview-prep/principal-engineer-thinking/README.md
+      - interview-prep/principal-engineer-thinking/interview-questions.md

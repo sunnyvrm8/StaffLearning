@@ -27,6 +27,18 @@ Topics are written for **architect-level depth**: stakeholder pain first, trade-
 | [`chapters/08-networking-and-http/`](chapters/08-networking-and-http/README.md) | Full chapter + Top 10 Q&A |
 | [`chapters/09-api-design/`](chapters/09-api-design/README.md) | Full chapter + 50 interview questions |
 | [`chapters/10-database-design-and-data-modeling/`](chapters/10-database-design-and-data-modeling/README.md) | Full chapter + 50 interview questions |
+| [`chapters/17-microservices-architecture/`](chapters/17-microservices-architecture/README.md) | Full chapter + 25 interview questions |
+| [`chapters/18-event-driven-architecture/`](chapters/18-event-driven-architecture/README.md) | Full chapter + 25 interview questions |
+| [`chapters/25-security-architecture/`](chapters/25-security-architecture/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/26-observability/`](chapters/26-observability/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/27-performance-engineering/`](chapters/27-performance-engineering/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/28-scalability-and-capacity-planning/`](chapters/28-scalability-and-capacity-planning/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/29-platform-engineering-and-internal-developer-platforms/`](chapters/29-platform-engineering-and-internal-developer-platforms/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/30-cost-architecture-and-finops/`](chapters/30-cost-architecture-and-finops/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/31-architecture-governance/`](chapters/31-architecture-governance/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/32-ai-and-llm-systems-in-production/`](chapters/32-ai-and-llm-systems-in-production/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/33-rag-and-retrieval-architecture/`](chapters/33-rag-and-retrieval-architecture/interview-questions.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/34-agentic-systems-and-mlops-for-ai/`](chapters/34-agentic-systems-and-mlops-for-ai/interview-questions.md) | Top 10 Q&A (full chapter pending) |
 | [`leadership/`](leadership/README.md) | Leadership bundle + Top 20 Q&A with answers |
 | [`interview-prep/principal-engineer-thinking/`](interview-prep/principal-engineer-thinking/README.md) | Principal thinking lens + Top 10 Q&A with answers |
 

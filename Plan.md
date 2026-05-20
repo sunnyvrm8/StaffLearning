@@ -6,9 +6,9 @@ Curriculum for **Staff / Principal / Architect** interviews and on-the-job judgm
 
 | Track | When | Goal |
 |-------|------|------|
-| **Core sequence** | Chapters 1→36 in order | Build concepts in dependency order |
+| **Core sequence** | Chapters 1→37 in order | Build concepts in dependency order |
 | **Case studies** | After Ch. 20–28 (distributed + data + perf) | Integrate design under time pressure |
-| **Leadership** | Parallel from Ch. 17 onward; deep dive Ch. 35 | Staff+ bar: influence, execution, hiring |
+| **Leadership** | Parallel from Ch. 17 onward; deep dive Ch. 36 | Staff+ bar: influence, execution, hiring |
 | **Interview meta** | After core + case studies; revisit Ch. 4, 27–28 | Cadence, weak spots, mock loops |
 
 **Study rhythm (suggested):** 2 core chapters + 1 case study or leadership module + 5–10 interview questions from the topic bank.
@@ -96,13 +96,14 @@ Numbers are **chapter IDs** for `chapters/NN-slug/` folders. Slug = kebab-case t
 | 32 | AI and LLM Systems in Production (inference, routing, guardrails, eval, cost/latency) | 2025–2026 interview and product reality |
 | 33 | RAG and Retrieval Architecture (chunking, embeddings, vector stores, freshness) | Dominant enterprise AI integration pattern |
 | 34 | Agentic Systems and MLOps for AI (tools, memory, human-in-the-loop, monitoring drift) | Beyond RAG; production agent pitfalls |
+| 35 | AI Engineering Fluency and Agent Design (prompt/tool contracts, workflow design, building AI skills and agents, eval for workflows, literacy → Staff ownership) | Completes the AI arc with hands-on practice: how to shape reliable agent surfaces, not only consume APIs |
 
 ## Phase G — Leadership & interview integration
 
 | # | Topic | Why this order |
 |---|--------|----------------|
-| 35 | Leadership and Influence (see Leadership section) | Staff+ loop weight increases with level |
-| 36 | Mock Interviews and Preparation (see Interview Preparation) | Capstone: timed reps on weak chapters |
+| 36 | Leadership and Influence (see Leadership section) | Staff+ loop weight increases with level |
+| 37 | Mock Interviews and Preparation (see Interview Preparation) | Capstone: timed reps on weak chapters |
 
 ### Cross-cutting chapter links
 
@@ -111,6 +112,7 @@ Numbers are **chapter IDs** for `chapters/NN-slug/` folders. Slug = kebab-case t
 - **Ch. 12 ↔ 28:** cache ↔ sharding and hot-key mitigation  
 - **Ch. 24 ↔ 26:** SLOs ↔ dashboards and alert quality  
 - **Ch. 31 ↔ all:** ADRs capture rejected alternatives from case studies  
+- **Ch. 32–35:** production LLMs → RAG → agentic/MLOps → fluency (skills, agents, workflow design)
 
 ---
 
