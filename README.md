@@ -20,6 +20,10 @@ Topics are written for **architect-level depth**: stakeholder pain first, trade-
 | [`chapters/01-solid-and-core-engineering-principles/`](chapters/01-solid-and-core-engineering-principles/README.md) | Full chapter + Top 20 Q&A |
 | [`chapters/02-design-patterns/`](chapters/02-design-patterns/README.md) | Full chapter + 25 interview questions |
 | [`chapters/03-domain-driven-design-and-bounded-contexts/`](chapters/03-domain-driven-design-and-bounded-contexts/README.md) | Full chapter + Top 10 Q&A |
+| [`chapters/04-data-structures-and-complexity/`](chapters/04-data-structures-and-complexity/README.md) | Full chapter + 50 interview questions |
+| [`chapters/05-java-and-golang-deep-dive/`](chapters/05-java-and-golang-deep-dive/README.md) | Full chapter + 50 Java + 50 Go Q&A |
+| [`chapters/06-concurrency-and-multithreading/`](chapters/06-concurrency-and-multithreading/README.md) | Top 10 Q&A (full chapter pending) |
+| [`chapters/07-memory-management/`](chapters/07-memory-management/interview-questions.md) | Top 10 Q&A (full chapter pending) |
 | [`leadership/`](leadership/README.md) | Leadership bundle + Top 20 Q&A with answers |
 | [`interview-prep/principal-engineer-thinking/`](interview-prep/principal-engineer-thinking/README.md) | Principal thinking lens + Top 10 Q&A with answers |
 
