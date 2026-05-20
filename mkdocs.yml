@@ -9,7 +9,7 @@ site_description: >-
 site_author: Staff Learning
 
 # CI sets SITE_URL for project pages; local default keeps links working on mkdocs serve.
-site_url: !ENV [SITE_URL, "https://sunnyvrm8.github.io/StaffLearning/"]
+site_url: !ENV [SITE_URL, "https://sunnyvrm8.github.io/StaffLearning/docs/"]
 
 # Replace with your fork so "View source" / edit links resolve.
 repo_name: sunnyvrm8/StaffLearning

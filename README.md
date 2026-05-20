@@ -57,6 +57,11 @@ interview-prep/                  # Interview strategy tracks
 
 Handbook folders are added incrementally as you (or the agent) generate topics. **`Plan.md` is the source of truth** for chapter numbers, titles, and scope.
 
+## Live site (GitHub Pages)
+
+- **URL:** https://sunnyvrm8.github.io/StaffLearning/
+- **Local build:** The generated site is available in the `site/` folder; open [site/index.html](site/index.html) or run `mkdocs serve` to preview locally.
+
 ## Using Cursor in this repo
 
 Open the project in [Cursor](https://cursor.com). Agent behavior is shaped by **rules** and **skills** under `.cursor/`.
